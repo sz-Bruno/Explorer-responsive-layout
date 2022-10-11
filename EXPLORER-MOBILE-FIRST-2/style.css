@@ -1,0 +1,281 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    background-color: hsla(233, 100%, 97%, 1)
+}
+.page{
+    margin:auto;
+    width: 100%;
+}
+header{
+    background-color: hsla(218, 17%, 62%, 1);
+    text-align: center;
+   
+}
+header img{
+    animation-name:  downtop;
+    animation-duration: 700ms;
+    animation-delay: 500ms;
+    
+    max-width: 14rem;
+    margin-top: 3.2rem ;
+    
+}
+header h1{
+    animation-name:  leftright;
+    animation-duration: 1.5s;
+    animation-delay: 200ms;
+    padding: 0.8rem 8.6rem 0.7rem 8.7rem;
+    background-color: hsla(275, 18%, 79%, 1);
+    color:
+    hsla(0, 0%, 100%, 1);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+}
+.subheader{
+    width: 100%;
+    margin-top: 2.9rem;
+    
+}
+.containerp{
+    background-color: hsla(233, 100%, 97%, 1)
+}
+.containerp p{
+    animation-name:  rightleft;
+    animation-duration: 1.5s;
+    animation-delay: 200ms;
+    margin:auto;
+    padding: 1.4rem 2.9rem 0 3.5rem;
+    max-width: 30.5rem;
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    
+}
+ main{
+  
+ 
+    padding: 6.3rem 2.9rem  6.7rem 3.5rem;
+    background-color: hsla(233, 100%, 97%, 1);
+ }
+ .cards{
+    display:flex;
+    flex-direction: column;
+    gap:3.2rem
+    
+ }
+ .card img{
+    
+    width: 100%;
+    border-radius: 2rem;
+ }
+  .card{
+    animation-name:  topdown;
+    animation-duration: 800ms;
+    animation-delay: 500ms;
+    
+    position: relative;
+ }
+ .cards .card:nth-child(1){
+    
+    object-fit: cover;
+   
+ }
+ .cards .card:nth-child(2){
+    
+    object-fit: cover;
+ }
+ .cards .card:nth-child(3){
+    
+    object-fit: cover;
+ }
+ .cards .card:nth-child(4){
+    
+    object-fit: cover;
+ }
+ .cards .card:nth-child(5){
+    
+    object-fit: cover;
+ }
+ .cards .card:nth-child(6){
+    
+    object-fit: cover;
+ }
+.card span{
+    animation-name:  downtop;
+    animation-duration: 900ms;
+    animation-delay: 1s;
+    
+position: absolute;
+top:1.6rem;
+right: 1.6rem;
+font-family: 'Staatliches';
+font-style: normal;
+font-weight: 400;
+font-size: 2rem;
+line-height: 3.4rem;
+letter-spacing: 0.05em;
+padding: 2px 2.3rem 2px 2.4rem;
+ background: #FEEAFA;
+border-radius: 20px;
+color: #4A4E69;
+
+
+}
+.footer{
+    animation-name:  downtop;
+    animation-duration: 2s;
+    animation-delay: 2s;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 28px;
+
+text-align: center;
+
+color: #4A4E69;
+
+mix-blend-mode: normal;
+margin-top: 5rem;
+}
+.footer span{
+    font-weight: 700;
+}
+
+@media (min-width:680px){
+    
+    .page{
+        display:flex;
+        max-width: 128rem;
+       gap:9.8rem;
+       margin-left: 0;
+          
+    }
+    header {
+        
+        min-width: 37.7rem;
+    }
+    header h1{
+        padding:2.1rem 0 2rem;
+        font-size: 4.8rem;
+    }
+    header img{
+        min-width: 21.4rem;
+    }
+    .containerp{
+        margin:0 auto
+    }
+    .card span{
+        display: flex;
+        align-items: center;
+        position:absolute;
+        top:6px;
+        right:8px;
+        font-size: 12px;
+       padding:0 0.5rem 0rem 0.5rem;
+        max-height: 2rem;
+        
+    }
+    .cards {
+        display:grid;
+        align-items: center;
+        grid-template-areas: " A C E" " B C F" "B D F ";
+        
+    }
+    .cards .card:nth-child(1){
+        grid-area: A;
+    }
+    .cards .card:nth-child(2){
+        grid-area: C;
+    }
+    .cards .card:nth-child(3){
+        grid-area: E;
+    }
+    .cards .card:nth-child(4){
+        grid-area: B;
+    }
+    .cards .card:nth-child(5){
+        grid-area: D;
+    }
+    .cards .card:nth-child(6){
+        grid-area: F;
+    }
+    
+    
+    .containerp {
+        max-width: 27.5rem;
+        background-color: hsla(218, 17%, 62%, 1);
+        color:hsla(0, 0%, 100%, 1);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.4rem;
+        line-height: 2rem;
+        margin-bottom: 12.5rem;
+    }
+    footer{
+        max-width: 59.2rem;
+        justify-content: center;
+    }
+}
+@media (min-width:750px){
+    .cards{
+        min-width: 48.5rem;
+    }
+    
+    
+@keyframes topdown{
+    0%{
+        opacity: 0;
+        transform: translateY(-15px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+@keyframes downtop{
+    0%{
+        opacity: 0;
+        transform: translateY(15px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-15px)
+    }
+}
+@keyframes leftright{
+    0%{
+        opacity: 0;
+        transform: translateX(-500px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+@keyframes rightleft{
+    0%{
+        opacity: 0;
+        transform: translateX(0px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(-100px)
+    }
+}
+}
